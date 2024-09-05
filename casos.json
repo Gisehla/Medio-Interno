@@ -1,28 +1,325 @@
-{
-  "casos": [
+[
     {
-      "descripcion": "Caso 1: Paciente de 65 años, femenina, vigil, desorientada en tiempo y persona. Presenta presión arterial de 90/60 mmHg, frecuencia cardíaca de 110 latidos por minuto, piel fría y sudorosa, letargia. Bioquímica sanguínea: sodio 130 mEq/L, potasio 3.8 mEq/L, glucosa 55 mg/dL. Análisis de orina: densidad urinaria baja, sin cetonas. ¿Cuál es el trastorno del medio interno? ¿Cuál es la causa del problema? ¿Cómo lo tratarías?"
+        "id": 1,
+        "examen_fisico": {
+            "estado_mental": "Vigil, desorientada en tiempo",
+            "presion_arterial": "90/60 mmHg",
+            "frecuencia_cardiaca": "125 latidos por minuto",
+            "frecuencia_respiratoria": "30 respiraciones por minuto",
+            "edema_periferico": "+4 hasta la pantorrilla",
+            "abdomen": "Distensión prominente con matidez desplazable de concavidad superior",
+            "borde_hepatico": "Palpable 4 trasveses de dedo por debajo del borde costal, levemente doloroso",
+            "distension_yugular": "3/3"
+        },
+        "bioquimica_sanguinea": {
+            "sodio_serico": "120 mEq/L",
+            "potasio_serico": "3.5 mEq/L",
+            "cloro_serico": "85 mEq/L",
+            "creatinina_serica": "3.2 mg/dL",
+            "urea_sangre": "60 mg/dL",
+            "proteinas_totales": "5.0 g/dL",
+            "albumina_serica": "3.0 g/dL",
+            "leucocitos": "15000 células/μL",
+            "bnp": "2500 pg/mL"
+        },
+        "analisis_urinario": {
+            "sodio_urinario": "17 mEq/L",
+            "osmolaridad_urinaria": "600",
+            "densidad_urinaria": "1.020",
+            "proteinas_en_orina": "500 mg/dL",
+            "sedimentos_urinarios": "Pueden mostrar cilindros granulares"
+        }
     },
     {
-      "descripcion": "Caso 2: Paciente masculino de 70 años, bradipsiquia marcada, tendencia al sueño, somnolencia constante. Presión arterial de 110/70 mmHg, frecuencia cardíaca de 75 latidos por minuto. Examen físico revela edema moderado en miembros inferiores. Bioquímica sanguínea: sodio 138 mEq/L, potasio 4.0 mEq/L, glucosa 90 mg/dL. Análisis de orina: densidad urinaria normal, sin cetonas. ¿Cuál es el trastorno del medio interno? ¿Cuál es la causa del problema? ¿Cómo lo tratarías?"
+        "id": 2,
+        "examen_fisico": {
+            "estado_mental": "Bradipsiquia marcada, tendencia al sueño",
+            "presion_arterial": "110/70 mmHg",
+            "frecuencia_cardiaca": "50 latidos por minuto",
+            "temperatura_axilar": "35.2 °C",
+            "frecuencia_respiratoria": "12 respiraciones por minuto",
+            "bmi": 34,
+            "edema_pretibial": "Duro, sin fóvea"
+        },
+        "bioquimica_sanguinea": {
+            "sodio_serico": "124 mEq/L",
+            "potasio_serico": "4.2 mEq/L",
+            "cloro_serico": "90 mEq/L",
+            "creatinina_serica": "1.0 mg/dL",
+            "urea_sangre": "15 mg/dL",
+            "proteinas_totales": "7.0 g/dL",
+            "albumina_serica": "3.8 g/dL",
+            "leucocitos": "7500 células/μL",
+            "bnp": "100 pg/mL"
+        },
+        "analisis_urinario": {
+            "sodio_urinario": "70 mEq/L",
+            "osmolaridad_urinaria": "800 mOsm/kg",
+            "densidad_urinaria": "1.025",
+            "proteinas_en_orina": "20 mg/dL",
+            "sedimentos_urinarios": "Normales",
+            "volumen_urinario": "800 ml en 24 hs"
+        }
     },
     {
-      "descripcion": "Caso 3: Paciente femenino de 55 años, consciente, orientada, presenta sed intensa. Presión arterial de 110/70 mmHg, frecuencia cardíaca de 100 latidos por minuto. Examen físico muestra piel seca y pérdida de turgor cutáneo. Bioquímica sanguínea: sodio 149 mEq/L, potasio 4.1 mEq/L, glucosa 250 mg/dL. Análisis de orina: densidad alta, presencia de glucosa y cetonas. ¿Cuál es el trastorno del medio interno? ¿Cuál es la causa del problema? ¿Cómo lo tratarías?"
+        "id": 3,
+        "examen_fisico": {
+            "presion_arterial": "110/70 mmHg",
+            "frecuencia_cardiaca": "100 latidos por minuto",
+            "frecuencia_respiratoria": "18 respiraciones por minuto",
+            "signo_pliegue": "Presente",
+            "mucosas": "Secas"
+        },
+        "bioquimica_sanguinea": {
+            "sodio_serico": "140 mEq/L",
+            "potasio_serico": "2.8 mEq/L",
+            "cloro_serico": "100 mEq/L",
+            "creatinina_serica": "1.2 mg/dL",
+            "urea_sangre": "40 mg/dL",
+            "proteinas_totales": "7.0 g/dL",
+            "albumina_serica": "3.8 g/dL",
+            "leucocitos": "8000 células/μL",
+            "bnp": "100 pg/mL"
+        },
+        "analisis_urinario": {
+            "sodio_urinario": "30 mEq/L",
+            "potasio_urinario": "15 mEq/L",
+            "osmolaridad_urinaria": "600 mOsm/kg",
+            "densidad_urinaria": "1.025",
+            "creatinina_urinaria": "120 mg/dL",
+            "proteinas_en_orina": "25 mg/dL",
+            "sedimentos_urinarios": "Normales",
+            "volumen_urinario": "2500 mL"
+        }
     },
     {
-      "descripcion": "Caso 4: Paciente masculino de 60 años, con palidez, taquipnea (26 respiraciones por minuto), y saturación de oxígeno de 92% al aire ambiente. Presenta un estado de agitación leve. Presión arterial de 130/85 mmHg, frecuencia cardíaca de 95 latidos por minuto. Bioquímica sanguínea: sodio 137 mEq/L, potasio 5.5 mEq/L, creatinina 2.5 mg/dL. Análisis de orina: presencia de cilindros granulares y proteínas. ¿Cuál es el trastorno del medio interno? ¿Cuál es la causa del problema? ¿Cómo lo tratarías?"
+        "id": 4,
+        "examen_fisico": {
+            "palidez": true,
+            "taquipnea": "26 rpm",
+            "spo2": "92% al aire",
+            "edema_extremidades": "Presente en extremidades inferiores",
+            "distension_yugular": "2/3",
+            "crepitantes": "Hasta campo medio",
+            "debilidad_muscular": "Generalizada",
+            "hiporreflexia": true,
+            "letargia": true,
+            "presion_arterial": "160/100 mmHg"
+        },
+        "hallazgos_ecg": {
+            "onda_t": "Picuda y simétrica",
+            "intervalo_pr": "Prolongado",
+            "onda_p": "Desaparecida",
+            "complejo_qrs": "Ensanchado",
+            "bradicardia": true,
+            "bloqueo_av": "Primer grado"
+        },
+        "bioquimica_sanguinea": {
+            "potasio_serico": "7.2 mEq/L",
+            "creatinina_serica": "4.5 mg/dL",
+            "bicarbonato_serico": "15 mEq/L",
+            "urea": "60 mg/dL",
+            "calcio_serico": "7.8 mg/dL",
+            "fosforo_serico": "6.5 mg/dL",
+            "glucosa": "90 mg/dL",
+            "sodio_serico": "138 mEq/L",
+            "cloro_serico": "102 mEq/L",
+            "ph_arterial": "7.25",
+            "pco2": "30 mmHg",
+            "hemoglobina": "9.5 g/dL",
+            "hematocrito": "29%",
+            "globulos_blancos": "8000/mm³",
+            "plaquetas": "200000/mm³"
+        },
+        "analisis_urinario": {
+            "densidad_urinaria": "1.010",
+            "ph_urinario": "5.0",
+            "proteinuria": "++",
+            "glucosuria": "Negativa",
+            "hematuria": "Negativa",
+            "leucocitos": "5-10/campo",
+            "eritrocitos": "0-2/campo",
+            "cuerpos_cetonicos": "Negativos"
+        }
     },
     {
-      "descripcion": "Caso 5: Paciente femenina de 45 años, con antecedentes de diabetes tipo 1. Presenta respiración de Kussmaul, mucosas secas, y taquicardia (120 latidos por minuto). Presión arterial de 95/60 mmHg. Bioquímica sanguínea: sodio 135 mEq/L, potasio 5.2 mEq/L, glucosa 450 mg/dL, bicarbonato 12 mEq/L. Análisis de orina: presencia de cetonas y glucosa. ¿Cuál es el trastorno del medio interno? ¿Cuál es la causa del problema? ¿Cómo lo tratarías?"
+        "id": 5,
+        "examen_fisico": {
+            "respiracion": "Kussmaul",
+            "mucosas": "Secas",
+            "taquicardia": true,
+            "hipotension_ortostatica": true,
+            "estado_mental": "Alterado (confusión)",
+            "dolor_abdominal": "Difuso",
+            "nauseas_vomitos": true
+        },
+        "hallazgos_ecg": {
+            "taquicardia_sinusal": true,
+            "intervalo_qt": "Prolongado",
+            "ondas_t": "Picudas",
+            "segmento_st": "Depresión",
+            "onda_u": "Prominente"
+        },
+        "bioquimica_sanguinea": {
+            "glucosa": "450 mg/dL",
+            "ph_arterial": "7.10",
+            "bicarbonato_serico": "10 mEq/L",
+            "sodio_serico": "130 mEq/L",
+            "potasio_serico": "5.8 mEq/L",
+            "cloro_serico": "98 mEq/L",
+            "urea": "30 mg/dL",
+            "creatinina_serica": "1.8 mg/dL",
+            "hemoglobina": "13.0 g/dL",
+            "hematocrito": "39%",
+            "globulos_blancos": "16000/mm³",
+            "plaquetas": "250000/mm³"
+        },
+        "analisis_urinario": {
+            "glucosa_urinaria": "++++",
+            "cetonas_urinarias": "++++",
+            "densidad_urinaria": "1.030",
+            "ph_urinario": "5.0",
+            "proteinuria": "Negativa",
+            "sedimento_urinario": "Normales",
+            "leucocitos": "5-10/campo",
+            "eritrocitos": "0-2/campo"
+        }
     },
     {
-      "descripcion": "Caso 6: Paciente masculino de 38 años, con confusión y desorientación progresivas, letargia, aliento con olor a dulce. Presenta presión arterial de 110/70 mmHg, frecuencia cardíaca de 100 latidos por minuto. Bioquímica sanguínea: sodio 132 mEq/L, potasio 4.2 mEq/L, glucosa 600 mg/dL, bicarbonato 15 mEq/L. Análisis de orina: glucosa y cetonas presentes. ¿Cuál es el trastorno del medio interno? ¿Cuál es la causa del problema? ¿Cómo lo tratarías?"
+        "id": 6,
+        "examen_fisico": {
+            "estado_mental": "Alterado (confusión)",
+            "piel": "Palida, fria y pegajosa",
+            "frecuencia_cardiaca": "120 latidos por minuto",
+            "presion_arterial": "90/50 mmHg",
+            "frecuencia_respiratoria": "22 respiraciones por minuto",
+            "distension_abdominal": true,
+            "edema_pulmonar": true,
+            "crepitantes": "Presentes"
+        },
+        "hallazgos_ecg": {
+            "fibrilacion_auricular": true,
+            "bradicardia": false,
+            "taquicardia": true,
+            "complejo_qrs": "Normal",
+            "segmento_st": "No alteraciones significativas"
+        },
+        "bioquimica_sanguinea": {
+            "sodio_serico": "145 mEq/L",
+            "potasio_serico": "3.0 mEq/L",
+            "cloro_serico": "100 mEq/L",
+            "bicarbonato_serico": "18 mEq/L",
+            "creatinina_serica": "2.0 mg/dL",
+            "urea": "60 mg/dL",
+            "glucosa": "80 mg/dL",
+            "hemoglobina": "12.5 g/dL",
+            "hematocrito": "37%",
+            "globulos_blancos": "12000/mm³",
+            "plaquetas": "220000/mm³",
+            "bnp": "5000 pg/mL"
+        },
+        "analisis_urinario": {
+            "sodio_urinario": "30 mEq/L",
+            "potasio_urinario": "20 mEq/L",
+            "osmolaridad_urinaria": "450 mOsm/kg",
+            "densidad_urinaria": "1.015",
+            "proteinuria": "+",
+            "glucosuria": "Negativa",
+            "sedimento_urinario": "Normales",
+            "leucocitos": "0-5/campo",
+            "eritrocitos": "0-2/campo"
+        }
     },
     {
-      "descripcion": "Caso 7: Paciente masculino de 28 años, con disnea severa y frecuencia respiratoria de 38 respiraciones por minuto. Examen físico muestra esfuerzo espiratorio, uso de músculos accesorios, y tiraje intercostal. Presión arterial de 140/90 mmHg, frecuencia cardíaca de 110 latidos por minuto. Bioquímica sanguínea: sodio 139 mEq/L, potasio 4.0 mEq/L, PaO2 de 60 mmHg en gasometría arterial. Análisis de orina: normal. ¿Cuál es el trastorno del medio interno? ¿Cuál es la causa del problema? ¿Cómo lo tratarías?"
+        "id": 7,
+        "examen_fisico": {
+            "estado_mental": "Letárgico",
+            "piel": "Húmeda y caliente",
+            "taquicardia": true,
+            "taquipnea": "28 rpm",
+            "temperatura_axilar": "38.5 °C",
+            "mucosas": "Hiperémicas",
+            "signo_pliegue": "Ausente",
+            "hepatomegalia": "Presente"
+        },
+        "hallazgos_ecg": {
+            "fibrilacion_auricular": false,
+            "taquicardia": true,
+            "bradicardia": false,
+            "complejo_qrs": "Ensanchado",
+            "segmento_st": "No alteraciones significativas",
+            "ondas_t": "Invertidas en derivaciones precordiales"
+        },
+        "bioquimica_sanguinea": {
+            "sodio_serico": "130 mEq/L",
+            "potasio_serico": "5.0 mEq/L",
+            "cloro_serico": "98 mEq/L",
+            "bicarbonato_serico": "20 mEq/L",
+            "creatinina_serica": "1.0 mg/dL",
+            "urea": "30 mg/dL",
+            "glucosa": "140 mg/dL",
+            "hemoglobina": "14.0 g/dL",
+            "hematocrito": "42%",
+            "globulos_blancos": "18000/mm³",
+            "plaquetas": "180000/mm³",
+            "procalcitonina": "Elevada"
+        },
+        "analisis_urinario": {
+            "sodio_urinario": "40 mEq/L",
+            "potasio_urinario": "30 mEq/L",
+            "osmolaridad_urinaria": "400 mOsm/kg",
+            "densidad_urinaria": "1.020",
+            "proteinuria": "Negativa",
+            "glucosuria": "+",
+            "sedimento_urinario": "Leucocituria",
+            "leucocitos": "10-20/campo",
+            "eritrocitos": "0-5/campo"
+        }
     },
     {
-      "descripcion": "Caso 8: Paciente femenina de 50 años, con dificultad respiratoria extrema. Presenta uso de músculos accesorios y aleteo nasal. Presión arterial de 130/80 mmHg, frecuencia respiratoria de 30 respiraciones por minuto, frecuencia cardíaca de 120 latidos por minuto. Bioquímica sanguínea: sodio 138 mEq/L, potasio 4.3 mEq/L, PaO2 de 55 mmHg en gasometría arterial. Análisis de orina: normal. ¿Cuál es el trastorno del medio interno? ¿Cuál es la causa del problema? ¿Cómo lo tratarías?"
+        "id": 8,
+        "examen_fisico": {
+            "estado_mental": "Agitado",
+            "piel": "Fría y sudorosa",
+            "taquicardia": true,
+            "frecuencia_respiratoria": "20 respiraciones por minuto",
+            "mucosas": "Secas",
+            "presion_arterial": "90/50 mmHg",
+            "globo_vesical": true,
+            "edema_pretibial": "Leve"
+        },
+        "hallazgos_ecg": {
+            "taquicardia_sinusal": true,
+            "fibrilacion_auricular": false,
+            "bradicardia": false,
+            "complejo_qrs": "Normal",
+            "segmento_st": "No alteraciones significativas",
+            "onda_t": "Normal"
+        },
+        "bioquimica_sanguinea": {
+            "sodio_serico": "135 mEq/L",
+            "potasio_serico": "4.5 mEq/L",
+            "cloro_serico": "95 mEq/L",
+            "bicarbonato_serico": "22 mEq/L",
+            "creatinina_serica": "3.5 mg/dL",
+            "urea": "80 mg/dL",
+            "glucosa": "100 mg/dL",
+            "hemoglobina": "11.0 g/dL",
+            "hematocrito": "33%",
+            "globulos_blancos": "15000/mm³",
+            "plaquetas": "190000/mm³",
+            "acido_lactico": "Elevado"
+        },
+        "analisis_urinario": {
+            "sodio_urinario": "10 mEq/L",
+            "potasio_urinario": "15 mEq/L",
+            "osmolaridad_urinaria": "500 mOsm/kg",
+            "densidad_urinaria": "1.030",
+            "proteinuria": "+",
+            "glucosuria": "Negativa",
+            "sedimento_urinario": "Cilindros granulosos",
+            "leucocitos": "0-5/campo",
+            "eritrocitos": "5-10/campo"
+        }
     }
-  ]
-}
+]
