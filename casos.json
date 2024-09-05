@@ -1,28 +1,28 @@
 {
   "casos": [
     {
-      "descripcion": "Caso 1: Vigil, desorientada en tiempo. Presión Arterial: 90/60 mmHg ..."
+      "descripcion": "Caso 1: Paciente de 65 años, femenina, vigil, desorientada en tiempo y persona. Presenta presión arterial de 90/60 mmHg, frecuencia cardíaca de 110 latidos por minuto, piel fría y sudorosa, letargia. Bioquímica sanguínea: sodio 130 mEq/L, potasio 3.8 mEq/L, glucosa 55 mg/dL. Análisis de orina: densidad urinaria baja, sin cetonas. ¿Cuál es el trastorno del medio interno? ¿Cuál es la causa del problema? ¿Cómo lo tratarías?"
     },
     {
-      "descripcion": "Caso 2: Bradipsiquia marcada, tendencia al sueño. Presión Arterial: 110/70 mmHg ..."
+      "descripcion": "Caso 2: Paciente masculino de 70 años, bradipsiquia marcada, tendencia al sueño, somnolencia constante. Presión arterial de 110/70 mmHg, frecuencia cardíaca de 75 latidos por minuto. Examen físico revela edema moderado en miembros inferiores. Bioquímica sanguínea: sodio 138 mEq/L, potasio 4.0 mEq/L, glucosa 90 mg/dL. Análisis de orina: densidad urinaria normal, sin cetonas. ¿Cuál es el trastorno del medio interno? ¿Cuál es la causa del problema? ¿Cómo lo tratarías?"
     },
     {
-      "descripcion": "Caso 3: Presión Arterial: 110/70 mmHg. Frecuencia Cardíaca: 100 latidos por minuto ..."
+      "descripcion": "Caso 3: Paciente femenino de 55 años, consciente, orientada, presenta sed intensa. Presión arterial de 110/70 mmHg, frecuencia cardíaca de 100 latidos por minuto. Examen físico muestra piel seca y pérdida de turgor cutáneo. Bioquímica sanguínea: sodio 149 mEq/L, potasio 4.1 mEq/L, glucosa 250 mg/dL. Análisis de orina: densidad alta, presencia de glucosa y cetonas. ¿Cuál es el trastorno del medio interno? ¿Cuál es la causa del problema? ¿Cómo lo tratarías?"
     },
     {
-      "descripcion": "Caso 4: Palidez. Taquipnea (26 rpm). SpO2 92% al aire ..."
+      "descripcion": "Caso 4: Paciente masculino de 60 años, con palidez, taquipnea (26 respiraciones por minuto), y saturación de oxígeno de 92% al aire ambiente. Presenta un estado de agitación leve. Presión arterial de 130/85 mmHg, frecuencia cardíaca de 95 latidos por minuto. Bioquímica sanguínea: sodio 137 mEq/L, potasio 5.5 mEq/L, creatinina 2.5 mg/dL. Análisis de orina: presencia de cilindros granulares y proteínas. ¿Cuál es el trastorno del medio interno? ¿Cuál es la causa del problema? ¿Cómo lo tratarías?"
     },
     {
-      "descripcion": "Caso 5: Respiración de Kussmaul. Mucosas secas. Taquicardia ..."
+      "descripcion": "Caso 5: Paciente femenina de 45 años, con antecedentes de diabetes tipo 1. Presenta respiración de Kussmaul, mucosas secas, y taquicardia (120 latidos por minuto). Presión arterial de 95/60 mmHg. Bioquímica sanguínea: sodio 135 mEq/L, potasio 5.2 mEq/L, glucosa 450 mg/dL, bicarbonato 12 mEq/L. Análisis de orina: presencia de cetonas y glucosa. ¿Cuál es el trastorno del medio interno? ¿Cuál es la causa del problema? ¿Cómo lo tratarías?"
     },
     {
-      "descripcion": "Caso 6: Confusión y desorientación. Letargia. Aliento con olor a dulce ..."
+      "descripcion": "Caso 6: Paciente masculino de 38 años, con confusión y desorientación progresivas, letargia, aliento con olor a dulce. Presenta presión arterial de 110/70 mmHg, frecuencia cardíaca de 100 latidos por minuto. Bioquímica sanguínea: sodio 132 mEq/L, potasio 4.2 mEq/L, glucosa 600 mg/dL, bicarbonato 15 mEq/L. Análisis de orina: glucosa y cetonas presentes. ¿Cuál es el trastorno del medio interno? ¿Cuál es la causa del problema? ¿Cómo lo tratarías?"
     },
     {
-      "descripcion": "Caso 7: Fr 38 rpm. Esfuerzo espiratorio. Tiraje intercostal ..."
+      "descripcion": "Caso 7: Paciente masculino de 28 años, con disnea severa y frecuencia respiratoria de 38 respiraciones por minuto. Examen físico muestra esfuerzo espiratorio, uso de músculos accesorios, y tiraje intercostal. Presión arterial de 140/90 mmHg, frecuencia cardíaca de 110 latidos por minuto. Bioquímica sanguínea: sodio 139 mEq/L, potasio 4.0 mEq/L, PaO2 de 60 mmHg en gasometría arterial. Análisis de orina: normal. ¿Cuál es el trastorno del medio interno? ¿Cuál es la causa del problema? ¿Cómo lo tratarías?"
     },
     {
-      "descripcion": "Caso 8: Dificultad respiratoria extrema. Uso de músculos accesorios y aleteo nasal ..."
+      "descripcion": "Caso 8: Paciente femenina de 50 años, con dificultad respiratoria extrema. Presenta uso de músculos accesorios y aleteo nasal. Presión arterial de 130/80 mmHg, frecuencia respiratoria de 30 respiraciones por minuto, frecuencia cardíaca de 120 latidos por minuto. Bioquímica sanguínea: sodio 138 mEq/L, potasio 4.3 mEq/L, PaO2 de 55 mmHg en gasometría arterial. Análisis de orina: normal. ¿Cuál es el trastorno del medio interno? ¿Cuál es la causa del problema? ¿Cómo lo tratarías?"
     }
   ]
 }
