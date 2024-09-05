@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JTrivia Medio Interno</title>
+    <title>Juego de Trivia para Médicos</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -17,18 +17,24 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
             padding: 20px;
-            max-width: 600px;
+            max-width: 800px;
             margin: auto;
         }
-        .question {
-            margin: 20px 0;
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
         }
-        input[type="text"] {
-            width: 80%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
         }
         button {
             background-color: #4CAF50;
@@ -41,52 +47,81 @@
         button:hover {
             background-color: #45a049;
         }
+        input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
 
     <div class="trivia-container">
         <h1>Juego de Trivia para Médicos</h1>
-        <div id="textoNivel">
-            <!-- Aquí se mostrará el texto que cambia -->
+        <div id="tablaCaso">
+            <!-- Aquí se mostrará el caso en formato de tabla -->
         </div>
         <div class="question">
-            <label for="respuesta1">Pregunta 1:</label>
+            <label for="respuesta1">Pregunta 1: ¿Cuál es el trastorno del medio interno?</label>
             <input type="text" id="respuesta1" placeholder="Escribe tu respuesta">
         </div>
         <div class="question">
-            <label for="respuesta2">Pregunta 2:</label>
+            <label for="respuesta2">Pregunta 2: ¿Cuál es la causa del problema?</label>
             <input type="text" id="respuesta2" placeholder="Escribe tu respuesta">
         </div>
         <div class="question">
-            <label for="respuesta3">Pregunta 3:</label>
+            <label for="respuesta3">Pregunta 3: ¿Cómo lo tratarías?</label>
             <input type="text" id="respuesta3" placeholder="Escribe tu respuesta">
         </div>
         <button onclick="guardarRespuestas()">Guardar Respuestas</button>
     </div>
 
     <script>
-        let casosClinicos = [];
+        // Casos clínicos en formato JSON
+        const casos = [
+            {
+                "signosVitales": "PA 90/60 mmHg, FC 110 lpm, piel fría y sudorosa, letargia",
+                "bioquimica": "Na 130 mEq/L, K 3.8 mEq/L, glucosa 55 mg/dL",
+                "orina": "Densidad baja, sin cetonas",
+                "descripcion": "Paciente de 65 años, femenina, vigil, desorientada en tiempo y persona"
+            },
+            {
+                "signosVitales": "PA 110/70 mmHg, FC 75 lpm, edema en miembros inferiores",
+                "bioquimica": "Na 138 mEq/L, K 4.0 mEq/L, glucosa 90 mg/dL",
+                "orina": "Densidad normal, sin cetonas",
+                "descripcion": "Paciente de 70 años, masculino, con bradipsiquia marcada"
+            },
+            // Agrega más casos según sea necesario
+        ];
+
         let nivelActual = 0;
 
-        // Función para cargar los casos clínicos desde el archivo JSON
-        function cargarCasosClinicos() {
-            fetch('casos.json')
-                .then(response => response.json())
-                .then(data => {
-                    casosClinicos = data.casos;
-                    mostrarTextoNivel();
-                })
-                .catch(error => console.error('Error al cargar los casos clínicos:', error));
-        }
-
-        // Función para mostrar el texto del nivel actual
-        function mostrarTextoNivel() {
-            if (nivelActual < casosClinicos.length) {
-                document.getElementById('textoNivel').innerText = casosClinicos[nivelActual].descripcion;
-            } else {
-                alert("¡Felicidades! Has completado todos los niveles.");
-            }
+        // Función para mostrar los datos del caso en una tabla
+        function mostrarCasoEnTabla() {
+            const caso = casos[nivelActual];
+            const tablaCaso = `
+                <table>
+                    <tr>
+                        <th>Descripción</th>
+                        <td>${caso.descripcion}</td>
+                    </tr>
+                    <tr>
+                        <th>Signos Vitales</th>
+                        <td>${caso.signosVitales}</td>
+                    </tr>
+                    <tr>
+                        <th>Bioquímica Sanguínea</th>
+                        <td>${caso.bioquimica}</td>
+                    </tr>
+                    <tr>
+                        <th>Análisis de Orina</th>
+                        <td>${caso.orina}</td>
+                    </tr>
+                </table>
+            `;
+            document.getElementById('tablaCaso').innerHTML = tablaCaso;
         }
 
         // Función para guardar las respuestas
@@ -102,11 +137,15 @@
             
             // Avanza al siguiente nivel
             nivelActual++;
-            mostrarTextoNivel();
+            if (nivelActual < casos.length) {
+                mostrarCasoEnTabla();
+            } else {
+                alert("¡Felicidades! Has completado todos los niveles.");
+            }
         }
 
-        // Inicializar la página cargando los casos clínicos
-        cargarCasosClinicos();
+        // Inicializar la página mostrando el primer caso
+        mostrarCasoEnTabla();
     </script>
 
 </body>
