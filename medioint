@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Trivia para Médicos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+        .trivia-container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+        }
+        .question {
+            margin: 20px 0;
+        }
+        input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="trivia-container">
+        <h1>Juego de Trivia para Médicos</h1>
+        <div id="textoNivel">
+            <!-- Aquí se mostrará el texto que cambia -->
+        </div>
+        <div class="question">
+            <label for="respuesta1">Pregunta 1:</label>
+            <input type="text" id="respuesta1" placeholder="Escribe tu respuesta">
+        </div>
+        <div class="question">
+            <label for="respuesta2">Pregunta 2:</label>
+            <input type="text" id="respuesta2" placeholder="Escribe tu respuesta">
+        </div>
+        <div class="question">
+            <label for="respuesta3">Pregunta 3:</label>
+            <input type="text" id="respuesta3" placeholder="Escribe tu respuesta">
+        </div>
+        <button onclick="guardarRespuestas()">Guardar Respuestas</button>
+    </div>
+
+    <script>
+        // Array de textos para cada nivel
+        const textosNivel = [
+            "Texto para el nivel 1...",
+            "Texto para el nivel 2...",
+            "Texto para el nivel 3...",
+            // Agrega más textos según necesites
+        ];
+
+        let nivelActual = 0;
+
+        // Función para mostrar el texto del nivel actual
+        function mostrarTextoNivel() {
+            document.getElementById('textoNivel').innerText = textosNivel[nivelActual];
+        }
+
+        // Función para guardar las respuestas
+        function guardarRespuestas() {
+            const respuesta1 = document.getElementById('respuesta1').value;
+            const respuesta2 = document.getElementById('respuesta2').value;
+            const respuesta3 = document.getElementById('respuesta3').value;
+            
+            const nickname = prompt("Ingresa tu nickname:");
+
+            // Aquí podrías enviar las respuestas a un servidor o almacenarlas localmente
+            console.log(`Nickname: ${nickname}, Respuestas: ${respuesta1}, ${respuesta2}, ${respuesta3}`);
+            
+            // Avanza al siguiente nivel
+            nivelActual++;
+            if (nivelActual < textosNivel.length) {
+                mostrarTextoNivel();
+            } else {
+                alert("¡Felicidades! Has completado todos los niveles.");
+            }
+        }
+
+        // Inicializar la página mostrando el primer texto
+        mostrarTextoNivel();
+    </script>
+
+</body>
+</html>
+
