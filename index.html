@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juego de Trivia para Médicos</title>
+    <title>JTrivia Medio Interno</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -66,19 +66,27 @@
     </div>
 
     <script>
-        // Array de textos para cada nivel
-        const textosNivel = [
-            "Texto para el nivel 1...",
-            "Texto para el nivel 2...",
-            "Texto para el nivel 3...",
-            // Agrega más textos según necesites
-        ];
-
+        let casosClinicos = [];
         let nivelActual = 0;
+
+        // Función para cargar los casos clínicos desde el archivo JSON
+        function cargarCasosClinicos() {
+            fetch('casos.json')
+                .then(response => response.json())
+                .then(data => {
+                    casosClinicos = data.casos;
+                    mostrarTextoNivel();
+                })
+                .catch(error => console.error('Error al cargar los casos clínicos:', error));
+        }
 
         // Función para mostrar el texto del nivel actual
         function mostrarTextoNivel() {
-            document.getElementById('textoNivel').innerText = textosNivel[nivelActual];
+            if (nivelActual < casosClinicos.length) {
+                document.getElementById('textoNivel').innerText = casosClinicos[nivelActual].descripcion;
+            } else {
+                alert("¡Felicidades! Has completado todos los niveles.");
+            }
         }
 
         // Función para guardar las respuestas
@@ -94,17 +102,12 @@
             
             // Avanza al siguiente nivel
             nivelActual++;
-            if (nivelActual < textosNivel.length) {
-                mostrarTextoNivel();
-            } else {
-                alert("¡Felicidades! Has completado todos los niveles.");
-            }
+            mostrarTextoNivel();
         }
 
-        // Inicializar la página mostrando el primer texto
-        mostrarTextoNivel();
+        // Inicializar la página cargando los casos clínicos
+        cargarCasosClinicos();
     </script>
 
 </body>
 </html>
-
